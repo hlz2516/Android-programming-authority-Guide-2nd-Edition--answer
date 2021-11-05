@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="true_btn">对</string>
+    <string name="false_btn">错</string>
+    <string name="correct_tst">恭喜你，答对了！</string>
+    <string name="incorrect_tst">很遗憾，答错了！</string>
+    <string name="pre_btn">上一个</string>
+    <string name="next_btn">下一个</string>
+    <string name="q_highestmount">中国最高的山峰是珠穆朗玛峰</string>
+    <string name="q_biggestlake">中国最大的湖泊是鄱阳湖</string>
+    <string name="q_biggestisland">中国最大的岛屿是台湾岛</string>
+    <string name="warning_text">你确定要这样做吗？</string>
+    <string name="show_answer_btn">显示答案</string>
+    <string name="cheat_btn">作弊</string>
+    <string name="judgment_toast">作弊是可耻的</string>
+</resources>

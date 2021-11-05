@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#F7F790">
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/blank"
+        android:background="#F7F790"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input1"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/btn_open_file"
+                    android:background="@drawable/bg_btn_open_file"
+                    android:drawableStart="@drawable/openfile1_"
+                    android:text="@string/openfiletip"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/analysis"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/bg_btn_analysis"
+                    android:text="开始分析"
+                    android:textSize="24sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/blank"
+        android:orientation="vertical"
+        android:layout_above="@+id/tail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/tail"
+        android:background="#1AE66B"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+
+</RelativeLayout>
